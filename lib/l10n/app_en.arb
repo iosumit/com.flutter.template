@@ -1,0 +1,18 @@
+{
+  "appName": "flutter_template",
+  "login": "Login",
+  "signup": "Sign up",
+  "email": "Email",
+  "please_enter_your_email": "Please enter your email",
+  "enter_a_valid_email": "Enter a valid email",
+  "password": "Password",
+  "please_enter_your_password": "Please enter your password",
+  "password_must_be_at_least_character": "Password must be at least 6 characters long",
+  "reset": "Reset",
+  "reset_account_password": "Reset Account Password",
+  "name": "Name",
+  "please_enter_your_name": "Please enter your name",
+  "confirm_password": "Confirm Password",
+  "please_confirm_your_password": "Please confirm your password",
+  "passwords_do_not_match": "Passwords do not match"
+}

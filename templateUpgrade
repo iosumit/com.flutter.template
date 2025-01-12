@@ -1,0 +1,17 @@
+#!/bin/bash
+
+TEMPLATE_PATH="path_to_template"
+NEW_PROJECT_PATH=$1
+
+if [ -z "$NEW_PROJECT_PATH" ]; then
+    echo "Usage: ./create_flutter_project.sh <new_project_name>"
+    exit 1
+fi
+
+# Copy the template folder
+cp -r $TEMPLATE_PATH $NEW_PROJECT_PATH
+
+# Replace the placeholder in pubspec.yaml
+sed -i '' "s/{{projectName}}/$NEW_PROJECT_PATH/g" $NEW_PROJECT_PATH/pubspec.yaml
+
+echo "New Flutter project created at $NEW_PROJECT_PATH!"

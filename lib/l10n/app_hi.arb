@@ -1,0 +1,18 @@
+{
+  "appName": "flutter_template",
+  "login": "लॉगिन",
+  "signup": "साइन अप करें",
+  "email": "ईमेल",
+  "please_enter_your_email": "कृपया अपना ईमेल दर्ज करें",
+  "enter_a_valid_email": "एक वैध ईमेल दर्ज करें",
+  "password": "पासवर्ड",
+  "please_enter_your_password": "कृपया अपना पासवर्ड दर्ज करें",
+  "password_must_be_at_least_character": "पासवर्ड कम से कम 6 अक्षरों का होना चाहिए",
+  "reset": "रीसेट करें",
+  "reset_account_password": "खाते का पासवर्ड रीसेट करें",
+  "name": "नाम",
+  "please_enter_your_name": "कृपया अपना नाम दर्ज करें",
+  "confirm_password": "पासवर्ड की पुष्टि करें",
+  "please_confirm_your_password": "कृपया अपने पासवर्ड की पुष्टि करें",
+  "passwords_do_not_match": "पासवर्ड मेल नहीं खाते हैं"
+}
