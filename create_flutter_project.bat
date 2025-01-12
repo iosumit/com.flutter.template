@@ -104,6 +104,9 @@ flutter pub add http
 REM Run the generator script
 CALL gen
 
+ECHO. >> .gitignore
+ECHO /lib/generated/ >> .gitignore
+
 REM Final message
 ECHO Flutter project "%PROJECT_NAME%" created, customized, and template files copied successfully!
 

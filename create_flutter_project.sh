@@ -109,6 +109,10 @@ flutter pub add shared_preferences
 flutter pub add http
 ./gen
 
+echo "
+/lib/generated/
+" >> .gitignore
+
 # Final message
 echo "Flutter project '$PROJECT_NAME' created, customized, and template files copied successfully!"
 
