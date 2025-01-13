@@ -19,6 +19,12 @@ This template simplifies the process of creating a Flutter project by providing 
 
 ### 1. Download the Script File
 Download the script file from this repository:
+
+for Windows
+```bash
+curl -O https://raw.githubusercontent.com/iosumit/com.flutter.template/refs/heads/main/create_flutter_project.bat
+```
+for Mac/Linux
 ```bash
 curl -O https://raw.githubusercontent.com/iosumit/com.flutter.template/refs/heads/main/create_flutter_project.sh
 ```
