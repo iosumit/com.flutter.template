@@ -1,2 +1,3 @@
+flutter gen-l10n
 flutter pub get
 dart lib/post_build.dart
