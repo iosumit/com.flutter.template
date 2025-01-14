@@ -11,14 +11,9 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: IconButton(
-          onPressed: () {
-            Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
-          },
-          icon: Text(
-            Langs.of(context)!.splash_title,
-            style: TextStyle(fontSize: 40, color: Cols.of(context).c.textdark),
-          ),
+        child: Text(
+          Langs.of(context)!.splash_title,
+          style: TextStyle(fontSize: 40, color: Cols.of(context).c.textdark),
         ),
       ),
     );

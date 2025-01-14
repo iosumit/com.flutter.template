@@ -16,15 +16,30 @@ This template simplifies the process of creating a Flutter project by providing 
 ---
 
 ## Getting Started
-
-### 1. Download the Script File
+- Prerequisite Softwares that need to be installed
+  - [Flutter](https://flutter.dev/)
+  - [Git](https://git-scm.com/)
+- [For Windows](#for-windows)
+- [For Mac or Linux](#for-mac-or-linux)
+---
+### For Windows
+#### 1. Download the Script File
 Download the script file from this repository:
-
-for Windows
 ```bash
 curl -O https://raw.githubusercontent.com/iosumit/com.flutter.template/refs/heads/main/create_flutter_project.bat
 ```
-for Mac/Linux
+### 2. Run the Script
+Run the downloaded script in your command prompt to create a new Flutter project:
+```bash
+create_flutter_project #<project-name> #<organization-name>
+```
+---
+
+### For Mac or linux
+
+
+### 1. Download the Script File
+Download the script file from this repository:
 ```bash
 curl -O https://raw.githubusercontent.com/iosumit/com.flutter.template/refs/heads/main/create_flutter_project.sh
 ```
@@ -36,25 +51,31 @@ chmod +x create_flutter_project.sh
 ### 3. Run the Script
 Run the downloaded script in your terminal to create a new Flutter project:
 ```bash
-./create_flutter_project.sh
+./create_flutter_project.sh #<project-name> #<organization-name>
 ```
-
+---
 The script will:
 - Create a new Flutter project
 - Add pre-configured files 
 - Set up app theming
 - Add necessary dependencies to `pubspec.yaml`
 
----
-Project Run
+Run Project
 --
-all commands are same 
+All commands are same as flutter, this reporitory just creating template
 ```
 flutter run
 ```
 just one more command added
 
 #### *** Everytime once you write or modify your `.arb` file always run in terminal below command. it will automatically generate different variation of Langs.dart depending on supported languages ***
+### For Windows run
+``` bash
+gen
+# or 
+gen.bat
+```
+### For Mac / Linux run
 ```
 ./gen
 ```
@@ -90,15 +111,6 @@ A fully functional Authentication screens.
 - `lib/l10n/app_hi.arb`
 
 Localization setup to support multiple languages.
-
-#### *** Once you write or modify your .arb file always run in terminal below command. it will generate different variation of Langs.dart depending on supported languages ***
-```
-./gen
-```
-#### if above command requires execute permissions then 1st run below one and then above
-```
-chmod +x 
-```
 ### 4. `lib/utils/themes.dart`
 Customizable theming configuration.
 ### 5. `colors.dart`
@@ -128,6 +140,16 @@ After running the script, you can:
 1. Edit the `Authentication screens` and `auth_controller` to fit your design.
 2. Add more languages in the `l10n` directory.
 3. Modify the `theme.dart` file to customize the app's appearance.
+
+---
+## Some codes 
+```dart
+// for toggling the themes
+Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
+
+// for getting localization variables use
+Langs.of(context)!.name
+```
 
 ---
 
