@@ -1,5 +1,6 @@
 {
   "appName": "flutter_template",
+  "splash_title": "Splash",
   "login": "Login",
   "signup": "Sign up",
   "email": "Email",

@@ -54,10 +54,11 @@ class LoadingApp extends StatelessWidget {
     return Cols(
       c: tp.themeMode == ThemeMode.dark ? AppColorDark() : AppColorLight(),
       child: MaterialApp(
-        title: Langs.of(context)?.appName,
+        title: "flutter_template",
         theme: AppThemes.lightTheme,
         darkTheme: AppThemes.darkTheme,
         themeMode: tp.themeMode,
+        locale: tp.locale,
         localizationsDelegates: Langs.localizationsDelegates,
         supportedLocales: Langs.supportedLocales,
         home: SplashPage(),
@@ -75,10 +76,11 @@ class OnboardingApp extends StatelessWidget {
     return Cols(
       c: tp.themeMode == ThemeMode.dark ? AppColorDark() : AppColorLight(),
       child: MaterialApp(
-        title: Langs.of(context)?.appName,
+        title: "flutter_template",
         theme: AppThemes.lightTheme,
         darkTheme: AppThemes.darkTheme,
         themeMode: tp.themeMode,
+        locale: tp.locale,
         localizationsDelegates: Langs.localizationsDelegates,
         supportedLocales: Langs.supportedLocales,
         home: OnboardingPage(
@@ -101,10 +103,11 @@ class PublicApp extends StatelessWidget {
     return Cols(
       c: tp.themeMode == ThemeMode.dark ? AppColorDark() : AppColorLight(),
       child: MaterialApp(
-        title: Langs.of(context)?.appName,
+        title: "flutter_template",
         theme: AppThemes.lightTheme,
         darkTheme: AppThemes.darkTheme,
         themeMode: tp.themeMode,
+        locale: tp.locale,
         localizationsDelegates: Langs.localizationsDelegates,
         supportedLocales: Langs.supportedLocales,
         initialRoute: '/',
@@ -130,10 +133,11 @@ class PrivateApp extends StatelessWidget {
     return Cols(
       c: tp.themeMode == ThemeMode.dark ? AppColorDark() : AppColorLight(),
       child: MaterialApp(
-        title: Langs.of(context)?.appName,
+        title: "flutter_template",
         theme: AppThemes.lightTheme,
         darkTheme: AppThemes.darkTheme,
         themeMode: tp.themeMode,
+        locale: tp.locale,
         localizationsDelegates: Langs.localizationsDelegates,
         supportedLocales: Langs.supportedLocales,
         initialRoute: '/',

@@ -4,6 +4,9 @@ void main() {
   final sourceDir = Directory('.dart_tool/flutter_gen/gen_l10n');
   final destinationDir = Directory('lib/generated/gen_l10n');
 
+  if (destinationDir.existsSync()) {
+    destinationDir.deleteSync(recursive: true);
+  }
   // Check if the source directory exists
   if (sourceDir.existsSync()) {
     // Create destination directory if it doesn't exist

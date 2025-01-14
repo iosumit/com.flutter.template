@@ -13,7 +13,7 @@ Provider.of<ThemeProvider>(context, listen: false)
 
 class ThemeProvider with ChangeNotifier {
   ThemeMode _themeMode = ThemeMode.system;
-  Locale _locale = Locale('en');
+  Locale _locale = Locale('hi');
 
   ThemeMode get themeMode => _themeMode;
   Locale get locale => _locale;
