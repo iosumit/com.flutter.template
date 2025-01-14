@@ -1,4 +1,4 @@
-# Flutter Quick Start Template
+# Flutter Quick Start⚡️ Template
 
 This template simplifies the process of creating a Flutter project by providing a single script file that sets up the project with pre-configured features like:
 
